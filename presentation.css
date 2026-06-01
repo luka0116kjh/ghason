@@ -146,29 +146,18 @@ h2 {
 
 .phone-frame {
   position: relative;
-  width: min(360px, 100%);
+  width: min(320px, 100%);
   aspect-ratio: 9 / 19.5;
   justify-self: center;
   overflow: hidden;
-  border: 10px solid #111827;
-  border-radius: var(--phone-radius);
-  background:
-    linear-gradient(#ffffff, #ffffff) padding-box,
-    linear-gradient(145deg, #202a3a, #05070d) border-box;
+  border: 1px solid rgba(219, 229, 242, 0.9);
+  border-radius: 28px;
+  background: #ffffff;
   box-shadow: var(--shadow);
 }
 
 .phone-frame::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  z-index: 3;
-  width: 88px;
-  height: 22px;
-  transform: translateX(-50%);
-  border-radius: 999px;
-  background: #111827;
+  content: none;
 }
 
 .phone-frame img {
@@ -187,11 +176,11 @@ h2 {
 }
 
 .phone-large {
-  width: min(390px, 100%);
+  width: min(340px, 100%);
 }
 
 .phone-feature {
-  width: min(420px, 100%);
+  width: min(360px, 100%);
 }
 
 .image-placeholder {
@@ -212,7 +201,7 @@ h2 {
 
 .notification-frame {
   position: relative;
-  width: min(500px, 100%);
+  width: min(440px, 100%);
   aspect-ratio: 426 / 104;
   align-self: center;
   justify-self: center;
@@ -253,7 +242,7 @@ h2 {
 }
 
 .wide-phone-frame .phone-frame {
-  width: min(390px, 32vw);
+  width: min(330px, 28vw);
 }
 
 .compact-keywords {
@@ -297,7 +286,7 @@ figure {
 }
 
 figure .phone-frame {
-  width: min(310px, 100%);
+  width: min(270px, 100%);
 }
 
 figcaption {
@@ -544,13 +533,13 @@ figcaption {
   }
 
   figure .phone-frame {
-    width: min(220px, 42vw);
+    width: min(200px, 38vw);
   }
 
   .phone-frame,
   .phone-large,
   .phone-feature {
-    width: min(300px, 70vw);
+    width: min(260px, 64vw);
   }
 }
 
@@ -576,7 +565,7 @@ figcaption {
   }
 
   figure .phone-frame {
-    width: min(260px, 72vw);
+    width: min(230px, 68vw);
   }
 }
 
