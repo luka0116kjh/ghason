@@ -9,7 +9,7 @@
   --shadow: 0 28px 70px rgba(15, 23, 42, 0.14);
   --phone-radius: 34px;
   --control-safe-area: 92px;
-  --deck-scale: 0.95;
+  --deck-scale: 1.1;
 }
 
 * {
