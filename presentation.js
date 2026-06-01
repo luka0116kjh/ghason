@@ -6,6 +6,16 @@ const nextButton = document.querySelector("[data-next]");
 
 let currentIndex = 0;
 
+function getInitialSlideIndex() {
+  const requestedSlide = Number(new URLSearchParams(window.location.search).get("slide"));
+
+  if (!Number.isInteger(requestedSlide)) {
+    return 0;
+  }
+
+  return Math.max(0, Math.min(requestedSlide - 1, slides.length - 1));
+}
+
 function pad(number) {
   return String(number).padStart(2, "0");
 }
@@ -71,4 +81,4 @@ prevButton.addEventListener("click", prevSlide);
 nextButton.addEventListener("click", nextSlide);
 
 totalEl.textContent = pad(slides.length);
-updateSlide(0);
+updateSlide(getInitialSlideIndex());
