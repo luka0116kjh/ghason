@@ -358,6 +358,101 @@ figcaption {
   font-size: 0.7em;
 }
 
+.future-layout {
+  grid-template-rows: auto auto auto auto;
+  align-content: center;
+  gap: clamp(12px, 1.6vw, 20px);
+}
+
+.future-layout h2 {
+  font-size: clamp(38px, 4vw, 56px);
+}
+
+.future-layout .lead {
+  margin-top: 14px;
+  font-size: clamp(18px, 1.65vw, 24px);
+}
+
+.future-showcase {
+  display: grid;
+  grid-template-columns: minmax(190px, 0.32fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(22px, 2.8vw, 38px);
+  width: min(980px, 100%);
+  justify-self: center;
+}
+
+.ios-preview {
+  gap: 9px;
+}
+
+.ios-preview .phone-frame {
+  width: min(198px, 100%);
+}
+
+.future-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  width: 100%;
+  justify-self: center;
+}
+
+.future-grid article {
+  min-height: 76px;
+  padding: 13px 15px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.07);
+}
+
+.future-grid strong,
+.future-grid span,
+.thanks-box strong,
+.thanks-box p {
+  display: block;
+}
+
+.future-grid strong {
+  color: var(--blue-deep);
+  font-size: clamp(15px, 1.05vw, 18px);
+  font-weight: 850;
+}
+
+.future-grid span {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: clamp(13px, 0.88vw, 15px);
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.thanks-box {
+  width: min(980px, 100%);
+  justify-self: center;
+  padding: 14px 20px;
+  border: 1px solid rgba(29, 124, 255, 0.16);
+  border-radius: 8px;
+  background: rgba(234, 243, 255, 0.68);
+  text-align: center;
+}
+
+.thanks-box strong {
+  color: var(--ink);
+  font-size: clamp(18px, 1.35vw, 22px);
+  font-weight: 850;
+}
+
+.thanks-box p {
+  margin: 6px auto 0;
+  max-width: 860px;
+  color: var(--muted);
+  font-size: clamp(13px, 0.92vw, 16px);
+  font-weight: 650;
+  line-height: 1.42;
+}
+
 .presentation-controls {
   position: fixed;
   right: 26px;
@@ -436,6 +531,18 @@ figcaption {
     gap: 18px;
   }
 
+  .future-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .future-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .ios-preview .phone-frame {
+    width: min(240px, 62vw);
+  }
+
   figure .phone-frame {
     width: min(220px, 42vw);
   }
@@ -461,6 +568,10 @@ figcaption {
   }
 
   .mockup-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .future-grid {
     grid-template-columns: 1fr;
   }
 
